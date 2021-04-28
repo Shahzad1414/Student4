@@ -11,7 +11,7 @@ $(document).ready(function() {
         type: 'GET',
         success: function(data) {
             $("#content_1 #View4Tbl").empty();
-            $("#heading").text("The latest 20 measurements");
+            $("#heading").text("The latest 50 measurements");
             let tab =
                 `<tr>
                     <th>Row_Number</th>
@@ -24,7 +24,7 @@ $(document).ready(function() {
             for (let r of data) {
 
                 count = count + 1;
-                if (count <= 20) {
+                if (count <= 50) {
                     tab += `<tr> 
                     <td>${count} </td>
                     <td>${r.date_time.slice(0,10)}</td> 
@@ -72,7 +72,7 @@ $(document).ready(function() {
                 type: 'GET',
                 success: function(data) {
                     $("#content_1 #View4Tbl").empty();
-                    $("#heading").text("The latest 20 measurements");
+                    $("#heading").text("The latest 50 measurements");
                     let tab =
                         `<tr>
                                     <th>Row_Number</th>
@@ -85,7 +85,7 @@ $(document).ready(function() {
                     for (let r of data) {
 
                         count = count + 1;
-                        if (count <= 20) {
+                        if (count <= 50) {
                             tab += `<tr> 
                                     <td>${count} </td>
                                     <td>${r.date_time.slice(0,10)}</td> 
@@ -188,8 +188,8 @@ $(document).ready(function() {
                 type: 'GET',
                 success: function(data) {
                     $("#content_1 #View4Tbl").empty();
-                     $("#heading").text("latest 48 hours, values are hourly averages");
-                   
+                    $("#heading").text("latest 48 hours, values are hourly averages");
+
                     let tab =
                         `<tr>
                                     <th>Row_Number</th>
@@ -247,8 +247,8 @@ $(document).ready(function() {
                 type: 'GET',
                 success: function(data) {
                     $("#content_1 #View4Tbl").empty();
-                     $("#heading").text("latest 72 hours, values are hourly averages");
-                   
+                    $("#heading").text("latest 72 hours, values are hourly averages");
+
                     let tab =
                         `<tr>
                                     <th>Row_Number</th>
@@ -306,8 +306,8 @@ $(document).ready(function() {
                 type: 'GET',
                 success: function(data) {
                     $("#content_1 #View4Tbl").empty();
-                     $("#heading").text("latest week, values are hourly averages");
-                   
+                    $("#heading").text("latest week, values are hourly averages");
+
                     let tab =
                         `<tr>
                                     <th>Row_Number</th>
@@ -365,8 +365,8 @@ $(document).ready(function() {
                 type: 'GET',
                 success: function(data) {
                     $("#content_1 #View4Tbl").empty();
-                     $("#heading").text("latest month, values are hourly averages");
-                   
+                    $("#heading").text("latest month, values are hourly averages");
+
                     let tab =
                         `<tr>
                                     <th>Row_Number</th>
