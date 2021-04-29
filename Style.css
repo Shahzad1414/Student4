@@ -1,6 +1,7 @@
 .clock {
     position: relative;
     bottom: 0%;
+    margin-top: 30px;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     color: #17D4FE;
